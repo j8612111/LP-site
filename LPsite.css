@@ -1,0 +1,131 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  margin-top: 10px;
+}
+
+.header-nav-list {
+  display: flex;
+  font-size: 20px;
+}
+
+.logo-img {
+  height: 60px;
+}
+
+.header-nav-item {
+  color: gray;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main {
+  position: relative;
+  height: 500px;
+  top: 20px;
+  bottom: 100px;
+  /* bottom何故反映しない？ */
+}
+
+.first-view-img {
+  margin: 0 0 0 auto;
+  display: block;
+}
+
+.big-font,
+.big-font-ar,
+.middle-font,
+.small-font {
+  color: rgb(192, 51, 121);
+}
+
+.color {
+  color: rgb(44, 174, 197);
+}
+
+.big-font {
+  font-size: 410%;
+  top: 15%;
+  right: 29%;
+  position: absolute;
+}
+
+.big-font-ar {
+  font-size: 410%;
+  /* 65px */
+  top: 40%;
+  left: 31%;
+  position: absolute;
+  /* 要確認、おそらくline-heightとかで調節？ */
+}
+
+.middle-font {
+  font-size: 185%;
+  top: 75%;
+  left: 31%;
+  position: absolute;
+}
+
+.small-font {
+  color: gray;
+  top: 83%;
+  left: 31%;
+  position: absolute;
+  line-height: 30px;
+  font-size: 128%;
+}
+
+.font {
+  width: 100%;
+}
+
+/* line-heightとかfont-sizeなどの設定に関して要確認 */
+
+.contents{
+  color: rgb(192, 51, 121);
+  margin: 150px 0 20px 0;
+}
+
+.overview{
+  font-size: 30px;
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.border{
+  border: 2px solid silver;
+  padding-bottom: 25px;
+}
+
+.topic{
+  border-bottom: 1px solid silver;
+  padding: 20px 0;
+}
+
+.topic-date,.news,.service{
+  display: inline-block;
+  color: gray;
+}
+
+.news{
+  background-color: rgb(192, 51, 121);
+  padding:5px 15px;
+  color:#fff;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.main-footer{
+  
+}
+
