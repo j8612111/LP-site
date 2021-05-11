@@ -27,6 +27,7 @@ a {
   align-items: center;
   padding: 0 30px;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .header-nav-list {
@@ -45,14 +46,6 @@ a {
 
 .header-nav-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.main {
-  position: relative;
-  height: 500px;
-  top: 20px;
-  bottom: 100px;
-  /* bottom何故反映しない？ */
 }
 
 .sub {
@@ -77,28 +70,28 @@ a {
 }
 
 .big-font {
-  font-size: 60px;
-  top: 5%;
-  left: 27%;
+  font-size: 80px;
+  top: 110px;
+  left: 300px;
   position: absolute;
   line-height: 90px;
   font-family: "Indie Flower", cursive;
 }
 
 .middle-font {
-  font-size: 20px;
-  top: 55%;
-  left: 27%;
+  font-size: 28px;
+  top: 360px;
+  left: 300px;
   position: absolute;
 }
 
 .small-font {
   color: rgb(100, 98, 98);
-  top: 62%;
-  left: 27%;
+  top: 400px;
+  left: 300px;
   position: absolute;
   line-height: 30px;
-  font-size: 14px;
+  font-size: 19px;
 }
 
 .font {
@@ -129,8 +122,8 @@ a {
 
 .topic {
   border-bottom: 1px solid silver;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .topic-top {
@@ -147,7 +140,7 @@ a {
 
 .news {
   background-color: rgb(179, 19, 99);
-  padding: 0px 15px;
+  padding: 2px 15px;
   color: #fff;
   border-radius: 20px;
   margin: 0 20px;
@@ -155,7 +148,7 @@ a {
 
 .main-footer {
   width: 700px;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 70px auto;
 }
 
 .first-text,
@@ -168,20 +161,21 @@ a {
 .about-page {
   background-color: rgb(235, 232, 232);
   background-size: cover;
-  height: 480px;
+  height: 450px;
   width: 100%;
 }
 
 .about-box {
   height: 500px;
   margin: 0 auto;
-  width: 1200px;
+  width: 85%;
 }
 
 .about-img {
-  height: auto;
-  width: 427px;
-  padding-top: 55px;
+  height: 285px;
+  width: 420px;
+  padding-top: 52px;
+  margin-right: 10px;
 }
 
 .about-contents {
@@ -208,6 +202,7 @@ a {
   flex-wrap: wrap;
   padding-top: 50px;
   font-size: 18px;
+  line-height: 30px;
 }
 
 /* 2ページ目 */
@@ -216,6 +211,10 @@ a {
   width: 72%;
   margin: 100px auto 0 auto;
   height: 550px;
+}
+
+.service-contents {
+  margin-bottom: 10px;
 }
 
 .first-service-img,
@@ -258,7 +257,7 @@ a {
 }
 
 .first-service-img {
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .first-service-text {
@@ -274,6 +273,7 @@ a {
   margin: 0 auto;
   padding-top: 15px;
   color: #fff;
+  line-height: 30px;
 }
 
 .second-service-img {
@@ -284,17 +284,20 @@ a {
 .text-class {
   width: 300px;
   margin: 0 auto;
-  padding-top: 25px;
+  margin-top: 25px;
 }
 
 .second-sample-text {
   color: #fff;
+  line-height: 30px;
+  margin-top: 20px;
 }
 
 .second-service-text {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  margin-top: 15px;
 }
 
 .third-service-img {
@@ -310,39 +313,42 @@ a {
 
 .third-sample-text {
   color: #fff;
+  line-height: 30px;
+  margin-top: 20px;
 }
 
 .third-service-text {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  margin-top: 15px;
 }
 
 /* 3ページ目 */
 
 .blog-page {
-  height: 580px;
+  height: 540px;
   background-color: rgb(235, 232, 232);
 }
 
 .blog-box {
-  width: 72%;
+  width: 77%;
   margin: 0 auto;
 }
 
 .blog-contents-all {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .blog-contents {
-  padding-top: 40px;
+  padding: 40px 0 0 34px;
 }
 
 .blog-box-contents {
   width: 300px;
   background-color: white;
-  height: 330px;
+  height: 310px;
   position: relative;
   border-radius: 15px;
 }
@@ -356,7 +362,7 @@ a {
 .blog-text {
   font-size: 16px;
   color: rgb(100, 98, 98);
-  padding: 10px 5px 15px 25px;
+  padding: 20px 5px 15px 30px;
   width: 240px;
 }
 
@@ -423,14 +429,18 @@ table td {
   width: 200px;
 }
 
+.company-contents {
+  margin-bottom: 10px;
+}
+
 .td-name {
-  width: 450px;
+  width: 500px;
 }
 
 .company-box {
-  width: 700px;
-  margin: 100px auto 50px auto;
-  height: 550px;
+  width: 800px;
+  margin: 100px auto 0px auto;
+  height: 500px;
 }
 
 /* 5ページ目 */
@@ -438,9 +448,11 @@ table td {
 .flex-img {
   display: flex;
   justify-content: center;
-  width: 100%;
   height: auto;
-  transform: scale(1.15);
+}
+
+.full-img {
+  width: 720px;
 }
 
 .hp-text {
