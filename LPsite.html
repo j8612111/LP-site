@@ -7,8 +7,11 @@
   <link rel="stylesheet" href="LPsite.css">
   <link rel="stylesheet" href="reset.css">
   <title>LPサイト制作模写</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
   <header class="header">
     <a href="LPsite.HTML"><img class="logo-img" src="estra_logo.png" alt="会社ロゴ"></a>
     <nav class="header-nav">
@@ -31,11 +34,11 @@
     </div>
     <div class="main-footer">
       <div class="sub">
-        <p class="contents">News</p>
+        <p class="contents contents-news">News</p>
         <p class="overview">新着情報</p>
       </div>
       <div class="border">
-        <div class="topic">
+        <div class="topic topic-top">
           <p class="topic-date">2020/01/01</p>
           <p class="news">ニュース</p>
           <p class="service">COACHTECHのサービスが開始されました。</p>
@@ -64,9 +67,9 @@
     </div>
     <div class="about-page">
       <div class="about-box">
-        <div class="about">
+        <div class="about-contents">
           <p class="contents">About</p>
-          <p class="overview">Technology&nbsp;×&nbsp;Coaching</p>
+          <p class="overview overview-about">Technology&nbsp;×&nbsp;Coaching</p>
         </div>
         <div class="text-img-box">
           <div class="double-text">
@@ -79,29 +82,132 @@
     </div>
     <div class="service-page">
      <div class="service-box">
-        <div class="service-contents">
+       <div class="service-contents">
         <p class="contents">Service</p>
         <p class="overview">サービス内容</p>
-        </div>
+       </div>
         <div class="grid">
           <div class="first-grid-box">
-            <img class="service-img" src="service__first.svg" alt="教育事業画像">
-            <p class="service-text">教育事業</p>
-            <p class="sample-text">サンプルテキストがここには入ります。サンプルテキストがここには入ります。サンプルテキストがここには入ります。</p>
+            <img class="first-service-img" src="service__first.svg" alt="教育事業画像">
+            <p class="first-service-text">教育事業</p>
+            <p class="first-sample-text">サンプルテキストがここには入ります。サンプルテキストがここには入ります。サンプルテキストがここには入ります。</p>
           </div>
           <div class="second-grid-box">
-            <img class="service-img" src="service__first.svg" alt="教育事業画像">
-            <p class="service-text">教育事業</p>
-            <p class="sample-text">サンプルテキストがここには入ります。サンプルテキストがここには入ります。サンプルテキストがここには入ります。</p>
+            <img class="second-service-img" src="service__first.svg" alt="教育事業画像">
+            <div class="text-class">
+              <p class="second-service-text">教育事業</p>
+              <p class="second-sample-text">サンプルテキストがここには入ります。サンプルテキストがここには入ります。サンプルテキストがここには入ります。</p>
+            </div>
           </div>
           <div class="third-grid-box">
-            <img class="service-img" src="service__first.svg" alt="教育事業画像">
-            <p class="service-text">教育事業</p>
-            <p class="sample-text">サンプルテキストがここには入ります。サンプルテキストがここには入ります。サンプルテキストがここには入ります。</p>
+            <img class="third-service-img" src="service__first.svg" alt="教育事業画像">
+            <div class="sub-text-class">
+              <p class="third-service-text">教育事業</p>
+              <p class="third-sample-text">サンプルテキストがここには入ります。サンプルテキストがここには入ります。サンプルテキストがここには入ります。</p>
+            </div>
           </div>
         </div>
      </div>
     </div>
+    <div class="blog-page">
+      <div class="blog-box">
+        <div class="blog-contents">
+          <p class="contents">Blog</p>
+          <p class="overview">ブログ</p>
+        </div>
+        <div class="blog-contents-all">
+          <div class="blog-box-contents">
+            <div class="blog-photo">
+            <div class="blog-category">Blog</div>
+              <img class="blog-img" src="blog__first.jpg" alt="パソコン画像">
+            </div>
+            <h2 class="blog-text">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h2>
+            <div class="tag">
+              <p class="tag-date">2021/01/01</p>
+              <p class="tag-name">#COACHTECH</p>
+          </div>
+        </div>
+              <div class="blog-box-contents">
+                <div class="blog-photo">
+                <div class="blog-category">Blog</div>
+                  <img class="blog-img" src="blog__first.jpg" alt="パソコン画像">
+                </div>
+                <h2 class="blog-text">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h2>
+                <div class="tag">
+                  <p class="tag-date">2021/01/01</p>
+                  <p class="tag-name">#COACHTECH</p>
+              </div>
+            </div>
+            <div class="blog-box-contents">
+              <div class="blog-photo">
+              <div class="blog-category">Blog</div>
+                <img class="blog-img" src="blog__first.jpg" alt="パソコン画像">
+              </div>
+              <h2 class="blog-text">プログラミング学習の勉強方法を特集。挫折しない秘訣とは？</h2>
+              <div class="tag">
+                <p class="tag-date">2021/01/01</p>
+                <p class="tag-name">#COACHTECH</p>
+            </div>
+          </div>
+        </div>
+        <div class="page-btn">
+         <a href="#">一覧ページへ</a>
+        </div>
+      </div>
+    </div>
+      <div class="company-box">
+        <div class="company-contents">
+          <p class="contents">Company</p>
+          <p class="overview">会社概要</p>
+        </div>
+        <table>
+          <tr>
+            <td class="td">会社名</td>
+            <td class="td-name">株式会社estra</td>
+          </tr>
+          <tr>
+            <td class="td">代表者名</td>
+            <td class="td-name">福場凛太郎</td>
+          </tr>
+          <tr>
+            <td class="td">本社所在地</td>
+            <td class="td-name">東京都渋谷区1-1-1</td>
+          </tr>
+          <tr>
+            <td class="td">従業員数</td>
+            <td class="td-name">100名</td>
+          </tr>
+          <tr>
+            <td class="td">電話番号</td>
+            <td class="td-name">0120-00-0000</td>
+          </tr>
+          <tr>
+            <td class="td">資本金</td>
+            <td class="td-name">¥10,000,000</td>
+          </tr>
+        </table>
+      </div>
+      <div class="flex-img">
+        <div class="flex-img-info">
+          <p class="hp-text">採用情報</p>
+          <img class="full-img" src="recruit.png" alt="採用情報">
+        </div>
+        <div class="flex-img-info">
+          <p class="hp-text">社員インタビュー</p>
+          <img class="full-img" src="interview.png" alt="社員インタビュー">
+        </div>
+      </div>
+    <div class="guide">
+      <p class="guide-text">株式会社estraへのお問い合わせはこちら</p>
+      <div class="line"></div>
+      <div class="btn">
+       <a href="#" class="form-btn">お問い合わせ</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <small>Copyright&nbsp;&copy;&nbsp;estra,inc&nbsp;All&nbsp;Rights&nbsp;Reserved.</small>
+    </footer>
   </main>
+  </div>
 </body>
 </html>

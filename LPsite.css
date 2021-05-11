@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -59,11 +77,12 @@ a {
 }
 
 .big-font {
-  font-size: 45px;
+  font-size: 60px;
   top: 5%;
   left: 27%;
   position: absolute;
   line-height: 90px;
+  font-family: "Indie Flower", cursive;
 }
 
 .middle-font {
@@ -90,25 +109,32 @@ a {
 
 .contents {
   color: rgb(192, 51, 121);
-  line-height: 1px;
   font-size: 13px;
-  /* 謎の余白がある */
+  padding-bottom: 10px;
+  font-family: "Indie Flower", cursive;
 }
 
 .overview {
   font-size: 23px;
   color: rgb(100, 98, 98);
   font-weight: bold;
+  padding-bottom: 20px;
 }
 
 .border {
   border-bottom: 2px solid silver;
   border-top: 2px solid silver;
-  padding: 20px 0 30px 0;
+  padding-bottom: 30px;
 }
 
 .topic {
   border-bottom: 1px solid silver;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.topic-top {
+  padding-top: 20px;
 }
 
 .topic-date,
@@ -141,23 +167,24 @@ a {
 
 .about-page {
   background-color: rgb(235, 232, 232);
-  height: 500px;
-  width:100%;
+  background-size: cover;
+  height: 480px;
+  width: 100%;
 }
 
-.about-box{
+.about-box {
   height: 500px;
   margin: 0 auto;
-  width:80%;
+  width: 1200px;
 }
 
 .about-img {
   height: auto;
-  width: 440px;
+  width: 427px;
   padding-top: 55px;
 }
 
-.about {
+.about-contents {
   text-align: center;
   transform: translateY(45px);
 }
@@ -169,29 +196,32 @@ a {
 }
 
 .first-text {
-  width: 380px;
-  padding-bottom: 10px;
+  width: 425px;
+  padding-bottom: 30px;
 }
 
 .second-text {
-  width: 390px;
+  width: 435px;
 }
 
 .double-text {
   flex-wrap: wrap;
-  padding-top: 40px;
-
+  padding-top: 50px;
+  font-size: 18px;
 }
 
 /* 2ページ目 */
 
 .service-page {
-  width: 70%;
-  margin: 20px auto;
+  width: 72%;
+  margin: 100px auto 0 auto;
+  height: 550px;
 }
 
-.service-img {
-  width: 10%;
+.first-service-img,
+.second-service-img,
+.third-service-img {
+  width: 30%;
   height: auto;
 }
 
@@ -199,18 +229,314 @@ a {
   display: grid;
   grid-template-rows: 200px 200px;
   grid-template-columns: 1fr 1fr;
+}
+
+.first-grid-box {
+  grid-column: 1/2;
   grid-row: 1/3;
-  background-color: rgb(179, 19, 99);
+  background-color: rgb(209, 20, 114);
 }
 
 .second-grid-box {
   grid-column: 2/3;
   grid-row: 1/2;
-  background-color: rgb(211, 25, 118);
+  background-color: rgb(189, 75, 132);
+  display: flex;
 }
 
 .third-grid-box {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: rgb(253, 31, 142);
+  background-color: rgb(187, 94, 141);
+  display: flex;
+}
+
+.first-service-img,
+.first-service-text {
+  display: block;
+  margin: 0 auto;
+}
+
+.first-service-img {
+  padding-top: 50px;
+}
+
+.first-service-text {
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+}
+
+.first-sample-text {
+  width: 380px;
+  margin: 0 auto;
+  padding-top: 15px;
+  color: #fff;
+}
+
+.second-service-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.text-class {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.second-sample-text {
+  color: #fff;
+}
+
+.second-service-text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.third-service-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.sub-text-class {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.third-sample-text {
+  color: #fff;
+}
+
+.third-service-text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 3ページ目 */
+
+.blog-page {
+  height: 580px;
+  background-color: rgb(235, 232, 232);
+}
+
+.blog-box {
+  width: 72%;
+  margin: 0 auto;
+}
+
+.blog-contents-all {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-contents {
+  padding-top: 40px;
+}
+
+.blog-box-contents {
+  width: 300px;
+  background-color: white;
+  height: 330px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+.blog-text {
+  font-size: 16px;
+  color: rgb(100, 98, 98);
+  padding: 10px 5px 15px 25px;
+  width: 240px;
+}
+
+.tag-name,
+.tag-date {
+  color: rgb(100, 98, 98);
+  font-size: 13px;
+  display: inline-block;
+}
+
+.blog-category {
+  font-size: 15px;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  background-color: rgb(209, 20, 114);
+  padding: 5px 20px;
+  border-radius: 15px 0 0 0;
+}
+
+.tag-date {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.tag-name {
+  margin-left: 70px;
+}
+
+.page-btn {
+  background-color: white;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0px auto;
+  border-radius: 30px;
+  border: 2px solid rgb(209, 20, 114);
+  color: rgb(209, 20, 114);
+}
+
+.page-btn:hover {
+  background-color: rgb(209, 20, 114);
+  transition: 0.3s;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 4ページ目 */
+
+table {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.td {
+  font-weight: bold;
+  background-color: rgb(235, 232, 232);
+  width: 200px;
+}
+
+.td-name {
+  width: 450px;
+}
+
+.company-box {
+  width: 700px;
+  margin: 100px auto 50px auto;
+  height: 550px;
+}
+
+/* 5ページ目 */
+
+.flex-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+}
+
+.hp-text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-img-info {
+  position: relative;
+}
+
+/* 6ページ目 */
+
+.guide-text {
+  margin-top: 100px;
+  font-weight: bold;
+  color: rgb(100, 98, 98);
+  text-align: center;
+  font-size: 22px;
+}
+
+.line {
+  position: relative;
+  display: inline-block;
+  height: 25px;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  width: 3px;
+  height: 50px;
+  margin: 0 auto 0 auto;
+  background-color: rgb(209, 20, 114);
+}
+
+.guide {
+  text-align: center;
+}
+
+.form-btn {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: block;
+  background: linear-gradient(to right, rgb(247, 3, 166), rgb(161, 19, 126));
+  height: 80px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 40px;
+  position: relative;
+  box-shadow: 0 10px 0 0 rgb(131, 36, 83);
+}
+
+.form-btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 10px;
+}
+
+.btn {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.form-btn::before {
+  content: "";
+  position: absolute;
+  background: url(mailicon.svg) no-repeat;
+  top: 35%;
+  left: 10%;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+.footer {
+  height: 50px;
+  background-color: rgb(235, 232, 232);
+  color: rgb(100, 98, 98);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
