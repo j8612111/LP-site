@@ -98,8 +98,6 @@ a {
   width: 100%;
 }
 
-/* line-heightとかfont-sizeなどの設定に関して要確認 */
-
 .contents {
   color: rgb(192, 51, 121);
   font-size: 13px;
@@ -452,7 +450,7 @@ table td {
 }
 
 .full-img {
-  width: 720px;
+  width: 100%;
 }
 
 .hp-text {
@@ -468,6 +466,7 @@ table td {
 
 .flex-img-info {
   position: relative;
+  width: 50%;
 }
 
 /* 6ページ目 */
